@@ -1,8 +1,8 @@
-# js-type 🚀
+# js-type-guard 🚀
 
-Lightweight, fast, and practical type-check utilities for JavaScript and TypeScript developers. js-type gives you a small set of predictable helpers to check runtime values — clear API, zero fuss, ready for production. ✨
+Lightweight, fast, and practical type-check utilities for JavaScript and TypeScript developers. js-type-guard gives you a small set of predictable helpers to check runtime values — clear API, zero fuss, ready for production. ✨
 
-Why choose js-type? 🎯
+Why choose js-type-guard? 🎯
 
 - Minimal and focused: a compact collection of common type checks (strings, numbers, arrays, dates, regex, etc.).
 - Predictable results: simple boolean utilities you can rely on in runtime guards and validation flows.
@@ -12,15 +12,15 @@ Why choose js-type? 🎯
 Install
 
 ```bash
-npm install js-type
+npm install js-type-guard
 # or
-yarn add js-type
+yarn add js-type-guard
 ```
 
 Quick start — JavaScript (CommonJS)
 
 ```js
-const { isString, isArray, WTF } = require('js-type');
+const { isString, isArray, WTF } = require('js-type-guard');
 
 console.log(isString('hello')); // true
 console.log(isArray([1,2,3])); // true
@@ -33,20 +33,20 @@ If you're using plain Node.js with CommonJS modules, you can require the whole m
 
 ```js
 // destructure specific helpers
-const { isString, WTF } = require('js-type');
+const { isString, WTF } = require('js-type-guard');
 
 console.log(isString('hello')); // true
 console.log(WTF(/abc/)); // 'regexp' 🎯
 
 // or require the module as an object
-const jsType = require('js-type');
+const jsType = require('js-type-guard');
 console.log(jsType.WTF(new Date())); // 'date'
 ```
 
 Quick start — TypeScript / ESM
 
 ```ts
-import { isNumber, isRegExp, WTF } from 'js-type';
+import { isNumber, isRegExp, WTF } from 'js-type-guard';
 
 if (isNumber(value)) {
   // runtime check passed — value is a number at runtime
@@ -60,7 +60,7 @@ console.log(WTF(rx)); // 'regexp' 🎯
 Class usage (optional)
 
 ```ts
-import { Type } from 'js-type';
+import { Type } from 'js-type-guard';
 
 console.log(Type.isString('a')); // true
 console.log(Type.isNull(null)); // true
