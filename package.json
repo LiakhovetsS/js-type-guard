@@ -1,6 +1,6 @@
 {
   "name": "js-type-guard",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Lightweight, zero-dependency runtime type-check utilities for JavaScript and TypeScript — fast, reliable, and TypeScript-friendly tools to guard your code and ship with confidence.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
